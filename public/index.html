@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cloudplex</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <script type="text/javascript" src="js/getip.js"></script>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="center">
+    <h1>Code Submission</h1>
+</div>
+
+<div class="center">
+<form class="pure-form pure-form-stacked" action="/upload" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" maxlength="100" class="pure-u-23-24" required>
+                <span class="pure-form-message">Enter your full name here</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" maxlength="100" class="pure-u-23-24" required>
+                <span class="pure-form-message">Enter a valid email address</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="code file">File</label>
+                <input type="file" name="file" required>
+                <span class="pure-form-message">Upload your solution file</span>
+            </div>
+            <div class="pure-control-group">
+                <input type="hidden" name="IP"  id="ip" readonly>
+            </div>
+            <div class="pure-control-group">
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+
+
+        </fieldset>
+</form>
+</div>
+
+</body>
+</html>
